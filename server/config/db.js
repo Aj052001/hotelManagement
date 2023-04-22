@@ -3,7 +3,7 @@ dotenv.config();
 import mongoose from "mongoose";
 const connect = async ()=>{
     try{
-        await mongoose.connect(process.env.MONGO);
+        await mongoose.connect("mongodb+srv://ajay:ajay@cluster0.gbpm7uj.mongodb.net/hoelBooking?retryWrites=true&w=majority");
         console.log("connected to mongoDB");
     }catch(error){
         throw error;
